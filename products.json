@@ -1,0 +1,16 @@
+[
+  {
+    "id": "product-1",
+    "name": "Fancy Mirror",
+    "price": "25000",
+    "image": "assets/images/fancy mirror.jpg",
+    "category": "decoration"
+  },
+  {
+    "id": "product-2",
+    "name": "Ceramic Vases Set",
+    "price": "25000",
+    "image": "assets/images/Ceramic Vases Set.jpg",
+    "category": "decoration"
+  }
+]

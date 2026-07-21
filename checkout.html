@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout | DIANA STORE</title>
+  <link rel="stylesheet" href="shop.css" />
+  
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">DIANA STORE</div>
+   <nav class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="shop.html">Shop</a>
+  <a href="my cart.html">Cart</a>
+  <!-- <a href="About us.html">About Us</a> -->
+  <!-- <a href="wishlist.html">Wishlist</a> -->
+  <button id="search-toggle" class="search-icon bounce">🔍</button>
+</nav>
+<div id="search-bar" class="search-bar">
+  <input type="text" id="search-input" placeholder="Search products..." />
+</div>
+
+
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </header>
+
+
+  <main class="checkout-container">
+    <h1>Checkout</h1>
+
+    <form id="checkout-form" onsubmit="handleCheckout(event)">
+      <div class="form-section">
+        <h2>Billing Information</h2>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="tel" placeholder="Phone Number" required />
+        <input type="text" placeholder="Shipping Address" required />
+        <input type="text" placeholder="Pay on Delivery/Payment gateway?" required />
+      </div>
+
+      <div class="form-section">
+        <h2>Order Summary</h2>
+        <div id="checkout-summary"></div>
+        <p><strong>Total:</strong> ₦<span id="checkout-total">0</span></p>
+      </div>
+
+      <button class="btn-primary" type="submit">Place Order</button>
+    </form>
+  </main>
+
+  <!-- Fancy Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>DIANA STORE</h2>
+      <p>Your go-to store for premium Interior Decor And Kitchenware</p>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook-svgrepo-com.svg" alt="Facebook" /></a>
+        <a href="#"><img src="images/instagram-svgrepo-com.svg" alt="Instagram" /></a>
+        <a href="#"><img src="images/twitter-svgrepo-com.svg" alt="Twitter" /></a>
+        <a href="https://wa.me/2348053904851"><img src="images/whatsapp.svg" alt="WhatsApp" /></a>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explore</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Stay Updated</h3>
+      <p>Get the latest product updates and offers.</p>
+      <form id="newsletter-form">
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 DIANA STORE. All rights reserved by Favour Adebowale.</p>
+  </div>
+</footer>
+<script defer src="shop.js"></script>
+</body>
+</html>
